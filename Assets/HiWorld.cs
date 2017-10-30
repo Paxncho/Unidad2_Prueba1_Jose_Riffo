@@ -9,11 +9,19 @@ public class HiWorld : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        text.text = "Hola Mundo";
+        HelloWorld();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
 	}
+
+    public void RandomColorText() {
+        text.text = Random.ColorHSV().ToString();
+    }
+
+    public void HelloWorld() {
+        text.text = "Hola Mundo";
+    }
 }
